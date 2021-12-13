@@ -2,18 +2,26 @@
 
 // * Declarando una clase
 class Person {
+    // * Estáticos
+    // *    Usados para cuando requieres de atributos o métodos que son necesarios para uso interno.
+    static _instanceCount = 0;
+    static get getInstanceCount() {
+        return Person._instanceCount;
+    }
+
     // * Atributos
     name = '';
     age = 0;
 
     // * Constructor
     constructor(name = '', age = 0) {
-        console.log('* Person Init *');
         let sanitizedAge = parseFloat(age) || 0;
         sanitizedAge = sanitizedAge < 0 ? 0 : sanitizedAge;
 
         this.name = name.trim();
         this.age = sanitizedAge;
+
+        Person._instanceCount++;
     }
 
     // * SETTERS
@@ -42,7 +50,7 @@ class Person {
 
     // * Métodos
     greet() {
-        return `Hi! My name is ${this.name}, and I'm ${this.age} years old.`;
+        return `Hi! My name is ${this.name} and I'm ${this.age} years old.`;
     }
 }
 
@@ -65,3 +73,7 @@ console.log('********');
 
 console.log('Cass now has', cass.getAge, 'years old.');
 console.log('Alan now has', alan.getAge, 'years old.');
+
+console.log('********');
+
+console.log(` - There are ${Person.getInstanceCount} Person instances created.`);
