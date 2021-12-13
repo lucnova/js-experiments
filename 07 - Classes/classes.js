@@ -4,6 +4,7 @@
 class Person {
     // * Estáticos
     // *    Usados para cuando requieres de atributos o métodos que son necesarios para uso interno.
+    // *    NO es necesario crear una instancia de el objeto, se pueden usar llamando: Person.[X]
     static _instanceCount = 0;
     static get getInstanceCount() {
         return Person._instanceCount;
