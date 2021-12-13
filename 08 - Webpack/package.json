@@ -1,0 +1,23 @@
+{
+  "name": "webpack-basic",
+  "version": "1.0.0",
+  "description": "Basic template for a webpack project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucnova/js-experiments.git"
+  },
+  "author": "lucnova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucnova/js-experiments/issues"
+  },
+  "homepage": "https://github.com/lucnova/js-experiments#readme",
+  "devDependencies": {
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
