@@ -7,6 +7,8 @@
 // *    Ej. Llevar el control de una app global, datos para compartirlos en toda la app,
 // *        bases de datos.
 
+// *    Beneficios: Ahorran memoria, y todas las instancias creadas apuntan a la misma instancia en memoria.
+
 class ChipsDubbo {
     static currentInstance;     // Lá instancia única que se guardará sobre la misma clase.
     // * Si se manda a llamar new, se devuelve esta misma
