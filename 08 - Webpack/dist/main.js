@@ -26,7 +26,7 @@ eval("/* module decorator */ module = __webpack_require__.nmd(module);\nvar __WE
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_greeter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/greeter */ \"./src/js/greeter.js\");\n\n\n\nfunction component() {\n    const element = document.createElement('div');\n\n    element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default().join(['Hello', 'webpack'], ' ');\n\n    return element;\n}\n\ndocument.body.appendChild(component());\nconsole.log((0,_js_greeter__WEBPACK_IMPORTED_MODULE_1__.greet)());\n\n//# sourceURL=webpack://webpack-basic/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_greeter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/greeter */ \"./src/js/greeter.js\");\n\r\n\r\n\r\nfunction component() {\r\n    const element = document.createElement('div');\r\n\r\n    element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default().join(['Hello', 'webpack'], ' ');\r\n\r\n    return element;\r\n}\r\n\r\ndocument.body.appendChild(component());\r\nconsole.log((0,_js_greeter__WEBPACK_IMPORTED_MODULE_1__.greet)());\n\n//# sourceURL=webpack://webpack-basic/./src/index.js?");
 
 /***/ }),
 
@@ -37,7 +37,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var loda
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"greet\": () => (/* binding */ greet)\n/* harmony export */ });\nconst greet = (greetWho = 'there') => {\n    return `Hey ${greetWho}!`;\n}\n\n//# sourceURL=webpack://webpack-basic/./src/js/greeter.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"greet\": () => (/* binding */ greet)\n/* harmony export */ });\nconst greet = (greetWho = 'there') => {\r\n    return `Hey ${greetWho}!`;\r\n}\n\n//# sourceURL=webpack://webpack-basic/./src/js/greeter.js?");
 
 /***/ })
 
