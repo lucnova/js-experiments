@@ -43,6 +43,14 @@ module.exports = {
         new HtmlWebPackPlugin({     // * Control sobre el HTML
             title: 'Testing Webpack',
             template: './src/index.html',
+        }),
+        new MiniCssExtractPlugin({
+            filename: '[name].css',
+            //filename: '[name].[fullhash].css',
+            // * fullhash devuelve un hash se puede usar para
+            //      asignar un nuevo archivo de estilos y no se almacene en memoria
+            //      en caso de que se quiera forzar cambios de estilo
+            ignoreOrder: false
         })
     ]
 };
