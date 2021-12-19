@@ -1,13 +1,12 @@
 import _ from 'lodash';
-import { greet } from "./js/greeter";
+import { Greeter } from "./js/Greeter";
 
-function component() {
+const Test = () => {
     const element = document.createElement('div');
-
     element.innerHTML = _.join(['Hello', 'webpack'], ' ');
 
     return element;
-}
+};
 
-document.body.appendChild(component());
-console.log(greet());
+document.body.appendChild(Test());
+document.body.appendChild(Greeter(`y'all, Scott Here`));
