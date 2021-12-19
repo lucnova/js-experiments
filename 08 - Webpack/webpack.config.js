@@ -26,7 +26,11 @@ module.exports = {
                     sources: false,     // * Mueve las locaciones de los archivos también
                     minimize: false,    // * Minificar HTML
                 },
-            }
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            },
         ]
     },
     plugins: [
