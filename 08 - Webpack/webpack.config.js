@@ -3,6 +3,7 @@
 // *    comando 'webpack' => npm run build en mi caso
 
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 // * NOTA: Se debe servir la app en el protocolo http (no el protocolo file)
 
@@ -29,8 +30,13 @@ module.exports = {
             },
             {
                 test: /\.css$/,
+                exclude: /styles.css$/,
                 use: ['style-loader', 'css-loader']
             },
+            {
+                test: /styles.css$/,
+                use: [MiniCssExtractPlugin.loader, 'css-loader']
+            }
         ]
     },
     plugins: [
