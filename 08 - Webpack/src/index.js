@@ -1,3 +1,5 @@
+import './styles.css';
+
 import { Test } from "./js/Test";
 import { Greeter } from "./js/Greeter";
 
