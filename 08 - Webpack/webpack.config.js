@@ -4,6 +4,7 @@
 
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 
 // * NOTA: Se debe servir la app en el protocolo http (no el protocolo file)
 
@@ -56,6 +57,11 @@ module.exports = {
             //      asignar un nuevo archivo de estilos y no se almacene en memoria
             //      en caso de que se quiera forzar cambios de estilo
             ignoreOrder: false
-        })
+        }),
+		new CopyPlugin({
+			patterns: [
+				{ from: "src/assets/", to: "assets/" },
+			],
+		}),
     ]
 };
